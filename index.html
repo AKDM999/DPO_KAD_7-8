@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Quest | Трекер привычек</title>
+    <!-- Pure.css — легкий фреймворк -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <!-- Дополнительные стили -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Яндекс.Шрифт (работает в РФ), запасной — системный -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+</head>
+<body>
+
+<!-- Основной контейнер приложения -->
+<div id="app">
+    <!-- Экран 1: Главная страница (LANDING) -->
+    <section id="screen-home" class="screen active">
+        <!-- Фон с гифкой (для примера взял шумную гифку, но можно поставить любую) -->
+        <div class="background-gif"></div>
+        
+        <!-- Левый блок (документация) -->
+        <div class="side-panel left-panel">
+            <button class="pure-button side-btn">📄 Документация API</button>
+            <button class="pure-button side-btn">⭐ GitHub</button>
+        </div>
+
+        <!-- Правый блок (о компании) -->
+        <div class="side-panel right-panel">
+            <button class="pure-button side-btn">📞 Контакты</button>
+            <button class="pure-button side-btn">🏆 О нас</button>
+        </div>
+
+        <!-- Центральный элемент (главная кнопка) -->
+        <div class="center-hero">
+            <button id="start-btn" class="pure-button hero-button">Начать</button>
+        </div>
+
+        <!-- Футер, который выезжает при наведении вниз -->
+        <footer class="slide-footer">
+            <p>© 2026 Habit Quest. Все права защищены. Сделано с ❤️ для хороших привычек.</p>
+        </footer>
+    </section>
+
+    <!-- Экран 2: Страница профиля / выбора формата -->
+    <section id="screen-formats" class="screen">
+        <h2 class="formats-title">Выбери свой стиль</h2>
+        <div class="formats-grid pure-g">
+            <div class="pure-u-1-2">
+                <div class="format-card" data-format="minimal">
+                    <img src="https://via.placeholder.com/300x200/2c3e50/ffffff?text=Минимализм" alt="Minimal" class="format-bg">
+                    <span class="format-name">Минимализм</span>
+                </div>
+            </div>
+            <div class="pure-u-1-2">
+                <div class="format-card" data-format="rpg">
+                    <img src="https://via.placeholder.com/300x200/8e44ad/ffffff?text=RPG+Режим" alt="RPG" class="format-bg">
+                    <span class="format-name">RPG Режим</span>
+                </div>
+            </div>
+            <!-- Можно добавить еще две карточки для симметрии -->
+             <div class="pure-u-1-2">
+                <div class="format-card" data-format="family">
+                    <img src="https://via.placeholder.com/300x200/27ae60/ffffff?text=Семейный" alt="Family" class="format-bg">
+                    <span class="format-name">Семейный</span>
+                </div>
+            </div>
+            <div class="pure-u-1-2">
+                <div class="format-card" data-format="sport">
+                    <img src="https://via.placeholder.com/300x200/e67e22/ffffff?text=Спорт" alt="Sport" class="format-bg">
+                    <span class="format-name">Спорт</span>
+                </div>
+            </div>
+        </div>
+        <button id="back-to-home-from-formats" class="pure-button back-btn">← На главную</button>
+    </section>
+
+    <!-- Экран 3: Страница конкретного формата -->
+    <section id="screen-format-detail" class="screen">
+        <h2 id="detail-title" class="detail-title">Минимализм</h2>
+        <div class="detail-layout">
+            <!-- Левый ряд примеров -->
+            <div class="examples-column left-examples">
+                <div class="example-card">📋 Чистка зубов</div>
+                <div class="example-card">📖 Чтение 10 стр</div>
+                <div class="example-card">💧 Вода 2л</div>
+            </div>
+            <!-- Центральный конструктор -->
+            <div class="constructor-area">
+                <h3>Твой трекер</h3>
+                <p>(здесь будет настройка расписания)</p>
+                <div class="mock-settings">
+                    <input type="text" placeholder="Название привычки" class="pure-input-1">
+                    <select class="pure-input-1">
+                        <option>Каждый день</option>
+                        <option>По будням</option>
+                        <option>Раз в неделю</option>
+                    </select>
+                    <button class="pure-button pure-button-primary">➕ Добавить</button>
+                </div>
+            </div>
+            <!-- Правый ряд примеров -->
+            <div class="examples-column right-examples">
+                <div class="example-card">🏋️ Зарядка</div>
+                <div class="example-card">🧘 Медитация</div>
+                <div class="example-card">✍️ Дневник</div>
+            </div>
+        </div>
+        <button id="back-to-formats" class="pure-button back-btn">← К выбору формата</button>
+    </section>
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
