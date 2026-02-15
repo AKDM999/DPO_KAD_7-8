@@ -29,7 +29,7 @@
         <!-- Правый блок (о компании) -->
         <div class="side-panel right-panel">
             <button class="pure-button side-btn">📞 Контакты</button>
-            <button class="pure-button side-btn">🏆 О нас</button>
+            <button id="about-btn" class="pure-button side-btn">🏆 О нас</button>
         </div>
 
         <!-- Центральный элемент (главная кнопка) -->
@@ -108,6 +108,39 @@
             </div>
         </div>
         <button id="back-to-formats" class="pure-button back-btn">← К выбору формата</button>
+    </section>
+
+    <!-- Экран 4: О нас -->
+    <section id="screen-about" class="screen">
+        <div class="about-container">
+            <!-- Заголовок "О нас" -->
+            <h1 class="about-title">О нас</h1>
+            
+            <!-- Блок с описанием компании -->
+            <div class="about-description">
+                <p>Мы — команда энтузиастов, создающих полезные привычки с 2020 года. Наша миссия — помочь людям стать лучше через простые и понятные инструменты трекинга.</p>
+            </div>
+            
+            <!-- Заголовок "Разработчики" -->
+            <h2 class="developers-title">Разработчики</h2>
+            
+            <!-- Карточки разработчиков в ряд -->
+            <div class="developers-grid">
+                <div class="developer-card">
+                    <div class="developer-avatar">👨‍💻</div>
+                    <div class="developer-name">Разработчик А</div>
+                    <div class="developer-role">Frontend & UX</div>
+                </div>
+                <div class="developer-card">
+                    <div class="developer-avatar">👩‍💻</div>
+                    <div class="developer-name">Разработчик Б</div>
+                    <div class="developer-role">Backend & AI</div>
+                </div>
+            </div>
+            
+            <!-- Кнопка "На главную" -->
+            <button id="back-to-home-from-about" class="pure-button back-btn">На главную</button>
+        </div>
     </section>
 </div>
 
