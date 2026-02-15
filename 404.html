@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Quest | Привычка потерялась</title>
+    <!-- Pure.css — легкий фреймворк -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+    <!-- Дополнительные стили -->
+    <link rel="stylesheet" href="styles/404.css">
+    <!-- Яндекс.Шрифт (работает в РФ) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="error-page">
+        <!-- Фоновая гифка (космос/червоточина) -->
+        <div class="background-gif"></div>
+        <div class="overlay"></div>
+        
+        <!-- Контент -->
+        <div class="error-content">
+            <!-- Креативный 404 -->
+            <div class="error-number">404</div>
+            
+            <!-- Анимационная иконка (потерянная галочка/привычка) -->
+            <div class="lost-icon">🌌✨</div>
+            
+            <!-- Основное сообщение -->
+            <h1 class="error-title">Привычка потерялась в пространстве</h1>
+            <p class="error-message">
+                Кажется, привычка, которую вы ищете, <span>испарилась</span> как утренний кофе или <span>сбежала</span> в другое измерение.<br>
+                Но не волнуйтесь, у нас есть запасные!
+            </p>
+            
+            <!-- Кнопки действий -->
+            <div class="help-buttons">
+                <a href="index.html" class="primary-btn pure-button">🌍 Вернуться на главную</a>
+                <a href="contacts.html" class="secondary-btn pure-button">📞 Сообщить о пропаже</a>
+            </div>
+            
+            <!-- Быстрые ссылки -->
+            <div class="quick-links">
+                <a href="index.html#screen-formats">📋 Форматы трекинга</a>
+                <a href="contacts.html#faq">❓ FAQ</a>
+                <a href="#" onclick="history.back(); return false;">🔙 Назад</a>
+            </div>
+            
+            <!-- Забавный счётчик (для атмосферы) -->
+            <div class="lost-counter">
+                ⏳ Потеряно привычек сегодня: <span>42</span> • Найдено: <span>37</span>
+            </div>
+            
+            <!-- Скрытое пасхальное яйцо (при наведении) -->
+            <div style="margin-top: 20px; font-size: 0.8rem; opacity: 0.5; transition: 0.3s;" 
+                 onmouseover="this.innerHTML='🧠 Совет: попробуй создать новую привычку вместо потерянной!'; this.style.opacity='1'" 
+                 onmouseout="this.innerHTML=''; this.style.opacity='0.5'">
+            </div>
+        </div>
+    </div>
+
+    <!-- Маленький скрипт для обновления счётчика (просто для веселья) -->
+    <script src="scripts/404.js"></script>
+</body>
+</html>
