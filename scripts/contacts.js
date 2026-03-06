@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Обработка отправки формы (для демонстрации)
+    /*
     const form = document.querySelector('.feedback-form');
     if (form) {
         form.addEventListener('submit', (e) => {
@@ -35,4 +36,5 @@ document.addEventListener('DOMContentLoaded', () => {
             form.reset();
         });
     }
+    */
 });
